@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/choosetext"
+        android:layout_width="284dp"
+        android:layout_height="44dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:singleLine="true"
+        android:text="@string/enter_choices_below"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.537" />
+
+    <TextView
+        android:id="@+id/anstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#E4E4E4"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/selectbutton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="151dp"
+        android:layout_height="49dp"
+        android:background="#E2E1E1"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/randomize"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/clrbtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addbtn"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <EditText
+        android:id="@+id/c1tf"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choosetext"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <Button
+        android:id="@+id/addbtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="92dp"
+        android:layout_height="84dp"
+        android:background="@android:drawable/ic_menu_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c1tf"
+        app:layout_constraintVertical_bias="0.226" />
+
+    <Button
+        android:id="@+id/clrbtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="151dp"
+        android:layout_height="49dp"
+        android:background="#E2E1E1"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/clear"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/selectbutton"
+        app:layout_constraintTop_toBottomOf="@+id/addbtn"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="311dp"
+        android:layout_height="281dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/choicestext"
+                android:layout_width="311dp"
+                android:layout_height="653dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="@string/choices_n"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Random Choice Generator</string>
+    <string name="enter_choices_below">Enter Choices Below:</string>
+    <string name="random_choice_selector">Random Choice Selector</string>
+    <string name="randomize">Randomize!</string>
+    <string name="choices_n">Choices:</string>
+    <string name="clear">Clear</string>
+</resources>
